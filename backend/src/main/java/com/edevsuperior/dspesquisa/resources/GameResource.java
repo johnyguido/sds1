@@ -1,4 +1,4 @@
-package com.edevsuperior.dspesquisa;
+package com.edevsuperior.dspesquisa.resources;
 
 import java.util.List;
 
