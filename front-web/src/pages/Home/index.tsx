@@ -6,7 +6,7 @@ import './styles.css';
 
 const Home = () => (
     
-    <div className="home-conteiner">
+    <div className="home-container">
     
         <div className="home-text">
     

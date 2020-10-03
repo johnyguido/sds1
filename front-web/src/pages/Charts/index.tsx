@@ -4,7 +4,7 @@ import './styles.css';
 import { barOptions, pieOptions } from './chart-options';
 import Chart from 'react-apexcharts';
 import axios from 'axios';
-import {buildBarSeries, getGenderChartData, getPlatformChartData} from './helpers';
+import { buildBarSeries, getGenderChartData, getPlatformChartData} from './helpers';
 
 type PieChartData = {
     labels: string[];
@@ -71,7 +71,7 @@ getData();
                         <Chart 
                         options={{...pieOptions, labels: platformData?.labels}}
                         type="donut"
-                        series={[platformData?.series]}
+                        series={platformData?.series}
                         width="350"
                         />
                     </div>
@@ -80,7 +80,7 @@ getData();
                         <Chart 
                         options={{...pieOptions, labels: genderData?.labels}}
                         type="donut"
-                        series={[genderData?.series]}
+                        series={genderData?.series}
                         width="350"
                         />
                     </div>

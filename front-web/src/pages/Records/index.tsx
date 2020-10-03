@@ -6,7 +6,7 @@ import Pagination from './Pagination';
 import './styles.css';
 import Filters from '../../components/Filters';
 
-const BASE_URL = 'http://localhost:8080'
+const BASE_URL = 'https://sds1-johny.herokuapp.com'
 
 const Records = () => {
     const [recordsResponse, setRecordsResponse] = useState<RecordsResponse>();
@@ -22,7 +22,7 @@ const Records = () => {
     }
 
     return (
-        <div className="page-contaniner">
+        <div className="page-container">
             <Filters link="/charts" linkText="VER GRÁFICO"/>
             <table className="records-table" cellPadding="0" cellSpacing="0">
                 <thead>
